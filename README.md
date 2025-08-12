@@ -27,8 +27,8 @@
 ## 🚀 Setup & Installation
 Clone the Repository
 ```bash
-git clone https://github.com/atczxc1-cell/Pharos-Full.git
-cd Pharos-Full
+git clone https://github.com/AirdropToolFree/Pharos-full-bot.git
+cd Pharos-Full-Bot
 ```
 ## Install Dependencies
 ```bash
