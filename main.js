@@ -6,7 +6,7 @@ const { HttpsProxyAgent } = require("https-proxy-agent");
 const readline = require("readline");
 const user_agents = require("./config/userAgents");
 const settings = require("./config/config.js");
-const { AQUAFLUX_TOKENS,
+const { AQUAFLUX_TOKENS, 
   CONTRACT_USD, CONTRACT_USDT, CONTRACT_USDC } = require("./utils/constants");
 const { sleep, loadData, getRandomNumber, saveToken, isTokenExpired, saveJson, getRandomElement } = require("./utils/utils.js");
 const { Worker, isMainThread, parentPort, workerData } = require("worker_threads");
@@ -46,7 +46,7 @@ class ClientAPI {
     this.provider = new ethers.JsonRpcProvider(settings.RPC_URL, {
       chainId: Number(settings.CHAIN_ID),
       name: "Pharos Testnet",
-    });
+    }); 
     this.wallet = new ethers.Wallet(this.itemData.privateKey, this.provider);
   }
 
@@ -83,7 +83,7 @@ class ClientAPI {
     const filePath = path.join(process.cwd(), "session_user_agents.json");
     fs.writeFileSync(filePath, JSON.stringify(session_user_agents, null, 2));
   }
-
+ 
   #get_platform(userAgent) {
     const platformPatterns = [
       { pattern: /iPhone/i, platform: "ios" },
@@ -113,7 +113,7 @@ class ClientAPI {
       this.#get_user_agent();
     } catch (error) {
       this.log(`Can't create user agent: ${error.message}`, "error");
-      return;
+      return; 
     }
   }
 
@@ -143,7 +143,7 @@ class ClientAPI {
     }
     console.log(logMessage);
   }
-
+ 
   async checkProxyIP() {
     try {
       const proxyAgent = new HttpsProxyAgent(this.proxy);
@@ -178,7 +178,7 @@ class ClientAPI {
       ...options,
     };
     const { retries, isAuth, extraHeaders, refreshToken } = initOptions;
-
+ 
     const headers = {
       ...this.headers,
       ...(isAuth || !this.token ? {} : { authorization: `Bearer ${this.token}` }),
@@ -208,7 +208,7 @@ class ClientAPI {
         return { success: true, data: response.data, status: response.status };
       } catch (error) {
         errorMessage = error?.response?.data?.error || error.message;
-        errorStatus = error.status;
+        errorStatus = error.status; 
         this.log(`Request failed: ${url} | ${JSON.stringify(errorMessage)}...`, "warning");
 
         if (error.status === 401) {
