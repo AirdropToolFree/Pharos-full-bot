@@ -671,9 +671,12 @@ Issued At: ${time}`;
               result = await mintService.mintFarosBadge();
             } else if (nft == "zentra") {
               result = await mintService.mintZentra();
-            }
-            else if (nft == "spout") {
+            } else if (nft == "spout") {
               result = await mintService.mintSpout();
+            } else if (nft == "stake") {
+              result = await mintService.mintStaking();
+            } else if (nft == "pns") {
+              result = await mintService.mintPns();
             } else {
               this.log(`Unknown NFT type: ${nft}`, "error");
               break;
