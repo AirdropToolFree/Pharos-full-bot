@@ -68,4 +68,4 @@ npm main.js
 ## Disclaimer
 This script is provided for educational and experimental purposes only. The user assumes all risks associated with its use. The author is not responsible for any loss of funds or other damages that may occur.
 
-last update 15.08
+last update 20.08
