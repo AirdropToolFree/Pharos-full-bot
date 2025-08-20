@@ -61,7 +61,7 @@ usenameXs.txt saves twitter username to receive token
 ```
 3️⃣ ## Run the Bot:
 ```bash
-npm main.js
+node main.js
 ```
 
 
