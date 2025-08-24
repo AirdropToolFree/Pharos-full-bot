@@ -9,6 +9,7 @@ const settings = {
   AMOUNT_REF: process.env.AMOUNT_REF ? parseInt(process.env.AMOUNT_REF) : 100,
   NUMBER_PER_REF: process.env.NUMBER_PER_REF ? parseInt(process.env.NUMBER_PER_REF) : 100,
   NUMBER_SEND: process.env.NUMBER_SEND ? parseInt(process.env.NUMBER_SEND) : 10,
+  NUMBER_STAKING: process.env.NUMBER_STAKING ? parseInt(process.env.NUMBER_STAKING) : 10,
   NUMBER_SWAP: process.env.NUMBER_SWAP ? parseInt(process.env.NUMBER_SWAP) : 10,
   NUMBER_ADDLP: process.env.NUMBER_ADDLP ? parseInt(process.env.NUMBER_ADDLP) : 10,
   NUMBER_MINT: process.env.NUMBER_MINT ? parseInt(process.env.NUMBER_MINT) : 1,
@@ -38,6 +39,7 @@ const settings = {
   AUTO_SWAP_FAROS: process.env.AUTO_SWAP_FAROS ? process.env.AUTO_SWAP_FAROS.toLowerCase() === "true" : false,
 
   AUTO_ADDLP: process.env.AUTO_ADDLP ? process.env.AUTO_ADDLP.toLowerCase() === "true" : false,
+  AUTO_STAKING: process.env.AUTO_STAKING ? process.env.AUTO_STAKING.toLowerCase() === "true" : false,
 
   ADVANCED_ANTI_DETECTION: process.env.ADVANCED_ANTI_DETECTION ? process.env.ADVANCED_ANTI_DETECTION.toLowerCase() === "true" : false,
   AUTO_AQUAFLUX: process.env.AUTO_AQUAFLUX ? process.env.AUTO_AQUAFLUX.toLowerCase() === "true" : false,
