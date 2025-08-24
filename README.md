@@ -21,8 +21,12 @@ then copy APIKey end edit in .ENV
 ✔️ Auto checkin
 
 ✔️ Auto swap
+
 ✔️ Auto mintNFT
+
 ✔️ Auto Aquaflux dapp
+
+✔️ Auto Staking 
 
 ✔️ Multi-thread, multi-account...
 
