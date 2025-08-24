@@ -1,4 +1,8 @@
-  # Update Pharos tool using nodejs (noproxy and proxy)
+# UPDATE RPC 
+Currently using pharos default RPC. If you want the bot to run smoother, create your own RPC at https://zan.top/service/overview
+then copy APIKey end edit in .ENV  
+
+# Update Pharos tool using nodejs (noproxy and proxy)
 
 ✔️ Auto mint badge
 
@@ -63,9 +67,6 @@ usenameXs.txt saves twitter username to receive token
 ```bash
 node main.js
 ```
-# UPDATE RPC 
-Currently using pharos default RPC. If you want the bot to run smoother, create your own RPC at https://zan.top/service/overview
-then copy APIKey end edit in .ENV
 
 ## Disclaimer
 This script is provided for educational and experimental purposes only. The user assumes all risks associated with its use. The author is not responsible for any loss of funds or other damages that may occur.
